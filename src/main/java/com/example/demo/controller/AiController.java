@@ -5,6 +5,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.service.AiService;
+import com.example.demo.service.AiServiceByChatClient;
 
 import lombok.extern.slf4j.Slf4j;
 import reactor.core.publisher.Flux;
@@ -22,8 +23,12 @@ import org.springframework.web.bind.annotation.PostMapping;
 @Slf4j
 public class AiController {
   // 필드. AiService 빈 주입받음
+  // @Autowired
+  // private AiService aiService;
+  
+  // Client
   @Autowired
-  private AiService aiService;
+  private AiServiceByChatClient aiService;
 
   // // ch01
   // @PostMapping(
