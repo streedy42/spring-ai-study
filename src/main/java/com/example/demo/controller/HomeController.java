@@ -5,25 +5,30 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 @Controller
 public class HomeController {
-  @GetMapping("/")
+@GetMapping("/")
   public String home() {
-      return "home";
-  }
+    return "home";
+}
 
-  @GetMapping("/chat-model")
+@GetMapping("/chat-model")
   public String chatModel() {
-      return "chat-model";
-  }
+    return "chat-model";
+}
 
-  @GetMapping("/chat-model-stream")
+@GetMapping("/chat-model-stream")
   public String chatModelStream() {
-      return "chat-model-stream";
-  }
+    return "chat-model-stream";
+}
   
 @GetMapping("/prompt-template")
   public String PromptTemplate() {
-      return "prompt-template";
-  }
+    return "prompt-template";
+}
+
+@GetMapping("/multi-messages")
+  public String multiMessages() {
+    return "multi-messages";
+}
   
   
 }
