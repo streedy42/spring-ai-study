@@ -34,6 +34,11 @@ public class HomeController {
   public String defaultMethod() {
     return "default-method";
 } 
+
+@GetMapping("/zero-shot-prompt")
+  public String zeroShotPrompt() {
+    return "zero-shot-prompt";
+} 
   
   
 }
