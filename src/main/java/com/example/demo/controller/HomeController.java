@@ -59,5 +59,10 @@ public class HomeController {
   public String chainOfThought() {
     return "chain-of-thought";
 }  
+
+@GetMapping("/self-consistency")
+  public String selfConsistency() {
+    return "self-consistency";
+} 
   
 }
